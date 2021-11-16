@@ -1,13 +1,15 @@
-++++++++			int a = 8
-> +					int b = 1
-<					use a
-[					loop start
-	> ++++++++		increment b by 8
-	< -				decrement a by 1
-]					loop while a != 0
+address 0 = A0
+address 0 = A1
+++++++++			A0 = 8
+> +				A1 = 1
+<				point to A0
+[				loop start
+	> ++++++++		A1 += 8
+	< -			A0 += 1
+]				while A0 != 0
 
-+++++++++++++		set a = 13
-[					loop start
-	> . + . +		print b, b+=1, print b, b+=1
-	< -				decrement a
-]
++++++++++++++			A0 = 13
+[				loop start
+	> . + . +		print A1, A1+=1, print A1, A1+=1
+	< -			decrement A0
+]				while A0 != 0
